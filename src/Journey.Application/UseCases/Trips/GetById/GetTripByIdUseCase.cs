@@ -6,7 +6,7 @@ using Journey.Infrastructure;
 using Journey.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Journey.Application.UseCases.GetById
+namespace Journey.Application.UseCases.Trips.GetById
 {
     public class GetTripByIdUseCase
     {

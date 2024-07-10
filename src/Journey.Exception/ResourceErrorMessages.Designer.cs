@@ -61,6 +61,33 @@ namespace Journey.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The date of the activity is outside the trip date interval.
+        /// </summary>
+        public static string ACTIVITY_DATE_NOT_IN_TRIP_DATE_RANGE {
+            get {
+                return ResourceManager.GetString("ACTIVITY_DATE_NOT_IN_TRIP_DATE_RANGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No activity found for the ID provided.
+        /// </summary>
+        public static string ACTIVITY_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("ACTIVITY_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The date should be in future.
+        /// </summary>
+        public static string DATE_NOT_AFTER_TODAY {
+            get {
+                return ResourceManager.GetString("DATE_NOT_AFTER_TODAY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EndDate must be after start date.
         /// </summary>
         public static string END_DATE_BEFORE_START_DATE {

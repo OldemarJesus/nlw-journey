@@ -3,7 +3,7 @@ using Journey.Exception.ExceptionsBase;
 using Journey.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
-namespace Journey.Application.UseCases.Delete
+namespace Journey.Application.UseCases.Trips.Delete
 {
     public class DeleteTripByIdUseCase
     {

@@ -2,7 +2,7 @@
 using Journey.Communication.Requests;
 using Journey.Exception;
 
-namespace Journey.Application.UseCases.Register
+namespace Journey.Application.UseCases.Trips.Register
 {
     public class RegisterTripValidator : AbstractValidator<RequestRegisterTripJson>
     {

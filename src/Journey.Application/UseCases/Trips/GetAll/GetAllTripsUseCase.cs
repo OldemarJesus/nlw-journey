@@ -1,12 +1,7 @@
 ﻿using Journey.Communication.Responses;
 using Journey.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Journey.Application.UseCases.GetAll
+namespace Journey.Application.UseCases.Trips.GetAll
 {
     public class GetAllTripsUseCase
     {

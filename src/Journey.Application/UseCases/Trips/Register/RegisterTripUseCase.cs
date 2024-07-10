@@ -4,7 +4,7 @@ using Journey.Exception.ExceptionsBase;
 using Journey.Infrastructure;
 using Journey.Infrastructure.Entities;
 
-namespace Journey.Application.UseCases.Register
+namespace Journey.Application.UseCases.Trips.Register
 {
     public class RegisterTripUseCase
     {
@@ -38,7 +38,7 @@ namespace Journey.Application.UseCases.Register
             var validator = new RegisterTripValidator();
             var result = validator.Validate(request);
 
-            if(!result.IsValid)
+            if (!result.IsValid)
             {
                 var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
 
