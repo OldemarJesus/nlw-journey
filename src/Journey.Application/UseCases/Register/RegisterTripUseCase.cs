@@ -4,7 +4,7 @@ using Journey.Exception.ExceptionsBase;
 using Journey.Infrastructure;
 using Journey.Infrastructure.Entities;
 
-namespace Journey.Application.UseCases
+namespace Journey.Application.UseCases.Register
 {
     public class RegisterTripUseCase
     {
@@ -35,19 +35,14 @@ namespace Journey.Application.UseCases
 
         public void Validate(RequestRegisterTripJson request)
         {
-            if(string.IsNullOrWhiteSpace(request.Name))
-            {
-                throw new JourneyOnValidationErrorException(Exception.ResourceErrorMessages.NAME_NULL_OR_EMPTY);
-            }
+            var validator = new RegisterTripValidator();
+            var result = validator.Validate(request);
 
-            if(request.StartDate.Date < DateTime.Now.Date)
+            if(!result.IsValid)
             {
-                throw new JourneyOnValidationErrorException(Exception.ResourceErrorMessages.START_DATE_IN_PAST);
-            }
+                var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
 
-            if(request.EndDate < request.StartDate)
-            {
-                throw new JourneyOnValidationErrorException(Exception.ResourceErrorMessages.END_DATE_BEFORE_START_DATE);
+                throw new JourneyOnValidationErrorException(errorMessages);
             }
         }
     }

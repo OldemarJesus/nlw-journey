@@ -1,5 +1,4 @@
-﻿
-using Journey.Communication.Enums;
+﻿using Journey.Communication.Enums;
 using Journey.Communication.Responses;
 using Journey.Exception;
 using Journey.Exception.ExceptionsBase;
@@ -7,7 +6,7 @@ using Journey.Infrastructure;
 using Journey.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Journey.Application.UseCases
+namespace Journey.Application.UseCases.GetById
 {
     public class GetTripByIdUseCase
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Journey.Application.UseCases
+namespace Journey.Application.UseCases.GetAll
 {
     public class GetAllTripsUseCase
     {

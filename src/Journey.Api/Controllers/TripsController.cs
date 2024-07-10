@@ -1,4 +1,7 @@
-﻿using Journey.Application.UseCases;
+﻿using Journey.Application.UseCases.Delete;
+using Journey.Application.UseCases.GetAll;
+using Journey.Application.UseCases.GetById;
+using Journey.Application.UseCases.Register;
 using Journey.Communication.Requests;
 using Journey.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
